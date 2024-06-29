@@ -627,7 +627,7 @@ async function getUserLocation() {
     }
 }
 
-getWeatherByCity(getUserLocation())
+getWeatherByCity("Brovary")
 async function preparelist(){
     const apiKey = '0e9a74a9222e462abf6112046242306';
     let savedlocs = document.getElementById("savedlocs")
