@@ -119,7 +119,7 @@ for(let i = 0; i<10;i++){
 
 async function getWeatherByCity(city) {
     const apiKey = '0e9a74a9222e462abf6112046242306';
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&aqi=no&lang=uk&days=10`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&aqi=no&lang=uk&days=10`;
 
     try {
         const response = await fetch(url);
@@ -636,7 +636,7 @@ async function preparelist(){
     try {
         for(let i = 0; i<6; i++){
 
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${savedcities[i]}&aqi=no&lang=uk&days=1`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${savedcities[i]}&aqi=no&lang=uk&days=1`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
